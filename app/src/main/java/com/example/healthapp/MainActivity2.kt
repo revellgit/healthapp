@@ -10,6 +10,8 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
+        supportActionBar?.hide()
+
         val btn1 = findViewById<ImageButton>(R.id.button1)
         val btn2 = findViewById<ImageButton>(R.id.button2)
 

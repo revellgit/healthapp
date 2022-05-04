@@ -17,6 +17,8 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
+        supportActionBar?.hide()
+
         val homebtn = findViewById<ImageButton>(R.id.homeButton)
 
         homebtn.setOnClickListener {
