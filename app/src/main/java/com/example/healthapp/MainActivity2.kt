@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.cardview.widget.CardView
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,8 +13,8 @@ class MainActivity2 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val btn1 = findViewById<ImageButton>(R.id.button1)
-        val btn2 = findViewById<ImageButton>(R.id.button2)
+        val btn1 = findViewById<CardView>(R.id.emergency_card)
+        val btn2 = findViewById<CardView>(R.id.affirmations_card)
 
         btn1.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
