@@ -1,3 +1,5 @@
+// Menu - MainActivity2
+
 package com.example.healthapp
 
 import android.content.Intent

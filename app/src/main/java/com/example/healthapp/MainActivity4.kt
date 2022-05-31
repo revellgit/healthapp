@@ -1,3 +1,5 @@
+// Affirmations - MainActivity4
+
 package com.example.healthapp
 
 import android.content.Context

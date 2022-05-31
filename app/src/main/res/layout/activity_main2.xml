@@ -47,7 +47,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_home_24"
+                    android:src="@drawable/ic_baseline_assistant_24"
                     />
 
                 <TextView
@@ -84,7 +84,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_home_24"
+                    android:src="@drawable/ic_baseline_card_giftcard_24"
                     />
 
                 <TextView
@@ -120,7 +120,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_home_24"
+                    android:src="@drawable/ic_baseline_analytics_24"
                     />
 
                 <TextView
@@ -156,13 +156,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_home_24"
+                    android:src="@drawable/ic_baseline_pause_circle_filled_24"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="INFO"
+                    android:text="BREATHE"
                     android:textAlignment="center"
                     />
             </LinearLayout>
@@ -192,13 +192,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_home_24"
+                    android:src="@drawable/ic_baseline_info_24"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ABOUT"
+                    android:text="INFORMATION"
                     android:textAlignment="center"
                     />
             </LinearLayout>
@@ -228,13 +228,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_home_24"
+                    android:src="@drawable/ic_baseline_help_center_24"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="KITTY"
+                    android:text="ABOUT"
                     android:textAlignment="center"
                     />
             </LinearLayout>
