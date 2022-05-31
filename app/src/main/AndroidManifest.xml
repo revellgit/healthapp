@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthApp">
         <activity
+            android:name=".MainActivity6"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity5"
             android:exported="false" />
         <activity

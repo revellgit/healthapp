@@ -15,6 +15,8 @@ class MainActivity2 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        // splash, 2 menu, 3 emergency, 4 affirmations, 5 sentiment, 6 breathe, 7 info, 8 about
+
         val btn1 = findViewById<CardView>(R.id.emergency_card)
         val btn2 = findViewById<CardView>(R.id.affirmations_card)
 
