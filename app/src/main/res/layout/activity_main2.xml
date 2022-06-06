@@ -12,6 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:textSize="50dp"
         android:text="Dashboard" />
 
     <androidx.gridlayout.widget.GridLayout
@@ -27,8 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
