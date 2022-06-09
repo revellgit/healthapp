@@ -26,6 +26,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/emergency_card"
+            app:cardBackgroundColor="@android:color/darker_gray"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"

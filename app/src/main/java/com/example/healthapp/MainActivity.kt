@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val DELAY = 1000L
+
         window.decorView.apply {
 
             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -23,6 +25,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
             finish()
-        }, 5000)
+        }, DELAY)
     }
 }

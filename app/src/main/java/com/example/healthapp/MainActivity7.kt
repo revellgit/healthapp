@@ -24,9 +24,10 @@ class MainActivity7 : AppCompatActivity() {
         }
 
         val url: String = "https://www.facebook.com/calm/"
+        val url2: String = "https://www.facebook.com/calm/"
+        val url3: String = "https://www.facebook.com/calm/"
 
         val calm_btn = findViewById<ImageView>(R.id.calm_logo)
-
 
         calm_btn.setOnClickListener {
             val uri = Uri.parse(url)
