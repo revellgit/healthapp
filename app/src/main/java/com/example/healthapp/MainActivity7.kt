@@ -38,13 +38,13 @@ class MainActivity7 : AppCompatActivity() {
         }
 
         calm_btn2.setOnClickListener {
-            val uri = Uri.parse(url)
+            val uri = Uri.parse(url2)
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
         calm_btn3.setOnClickListener {
-            val uri = Uri.parse(url)
+            val uri = Uri.parse(url3)
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }

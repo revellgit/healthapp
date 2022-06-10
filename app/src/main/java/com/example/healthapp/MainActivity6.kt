@@ -31,7 +31,7 @@ class MainActivity6 : AppCompatActivity() {
 
         var size = 40F
         var inhale = true
-        var breathCount = 2
+        var breathCount = 1
         val breaths = findViewById<TextView>(R.id.breath_count)
         val text = findViewById<TextView>(R.id.textView)
 
@@ -63,11 +63,11 @@ class MainActivity6 : AppCompatActivity() {
                     }
                 })
 
-                if (size > 130) {
+                if (size > 120) {
                     inhale = false
                 }
                 if (size < 20) {
-                    breathCount -=1
+                    breathCount +=1
                     inhale = true
 
                 }
@@ -75,7 +75,7 @@ class MainActivity6 : AppCompatActivity() {
 
         thread() {
             try {
-                Thread.sleep(30 * 1000)
+                Thread.sleep(60 * 1000)
             } finally {
                 timer.cancel();
             }
