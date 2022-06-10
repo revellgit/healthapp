@@ -40,6 +40,7 @@ class MainActivity6 : AppCompatActivity() {
         text.textSize = size
         text.text = "inhale"
 
+        mediaplayer.setVolume(100.0f, 100.0f)
         mediaplayer.start()
         var running: Boolean = true
 
