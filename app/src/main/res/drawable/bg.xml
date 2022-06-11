@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <gradient
+            android:startColor="#ff2d9a00"
+            android:endColor="#ff23ff"
+            android:type="radial"
+            android:gradientRadius="800dp"
+            />
+    </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:src="@drawable/ocean"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:alpha="0.1"/>
+    </item>
+</layer-list>
