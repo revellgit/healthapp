@@ -23,9 +23,9 @@ class MainActivity7 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val url: String = "https://www.facebook.com/calm/"
+        val url: String = "https://www.calm.com"
         val url2: String = "https://www.lifeline.org.nz/"
-        val url3: String = "https://www.facebook.com/calm/"
+        val url3: String = "https://www.healthcarenz.co.nz"
 
         val calm_btn = findViewById<ImageView>(R.id.calm_logo)
         val calm_btn2 = findViewById<ImageView>(R.id.calm_logo2)

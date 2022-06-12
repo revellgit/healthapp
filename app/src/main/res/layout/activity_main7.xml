@@ -13,13 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Information"
-        android:textSize="50dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042"
+        app:layout_constraintVertical_bias="0.100"
         />
 
     <ImageView
@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintVertical_bias="0.531"
         app:srcCompat="@drawable/lifeline_aotearoa_logo"
         />
 
@@ -57,8 +57,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862"
-        app:srcCompat="@drawable/calm_logo"
+        app:layout_constraintVertical_bias="0.821"
+        app:srcCompat="@drawable/healthcarenz_logo"
         />
 
     <ImageButton
@@ -73,5 +73,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
+        android:background="@drawable/rounded_corners"
         app:srcCompat="@drawable/ic_baseline_home_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

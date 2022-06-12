@@ -29,7 +29,6 @@
         android:minWidth="64dp"
         android:minHeight="64dp"
         android:background="@drawable/rounded_corners"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.953"
