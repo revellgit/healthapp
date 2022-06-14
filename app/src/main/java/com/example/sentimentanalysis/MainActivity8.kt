@@ -1,6 +1,6 @@
 // About - MainActivity8
 
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

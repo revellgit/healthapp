@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_bg"
-    tools:context=".MainActivity5">
+    tools:context=".MainActivity9"
+    >
 
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sentiment"
+        android:text="Analysis"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,46 +23,53 @@
         app:layout_constraintVertical_bias="0.100"
         />
 
-    <EditText
-        android:id="@+id/inputText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:hint="Tell me about your day ..."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294"
-        />
-
-    <Button
-        android:id="@+id/button_analyse"
+    <TextView
+        android:id="@+id/textView_polarity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Analyse"
+        android:text="polarity :"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532"
-        />
+        app:layout_constraintVertical_bias="0.519" />
 
-    <Button
-        android:id="@+id/clear_text"
+    <TextView
+        android:id="@+id/textView_subjectivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="clear"
+        android:text="subjectivity :"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647"
-        />
+        app:layout_constraintVertical_bias="0.723" />
+
+    <TextView
+        android:id="@+id/textView_poldes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pos/neg"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/textView_subdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="personal/fact"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
 
     <ImageButton
         android:id="@+id/homeButton"
@@ -77,5 +85,6 @@
         app:layout_constraintVertical_bias="0.976"
         android:background="@drawable/rounded_corners"
         app:srcCompat="@drawable/ic_baseline_home_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

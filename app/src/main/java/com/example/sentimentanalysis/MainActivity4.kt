@@ -1,15 +1,13 @@
 // Affirmations - MainActivity4
 
-package com.example.healthapp
+package com.example.sentimentanalysis
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
-import java.io.InputStream
 import java.util.*
 
 

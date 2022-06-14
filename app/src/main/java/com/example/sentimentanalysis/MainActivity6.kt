@@ -1,6 +1,6 @@
 // Breathe - MainActivity6
 
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import android.content.Intent
 import android.media.MediaPlayer

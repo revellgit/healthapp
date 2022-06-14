@@ -8,7 +8,9 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.healthapp"
+        // applicationId "com.example.sentimentanalysis"
+        applicationId "com.example.sentimentanalysis"
+
         minSdk 24
         targetSdk 32
         versionCode 1

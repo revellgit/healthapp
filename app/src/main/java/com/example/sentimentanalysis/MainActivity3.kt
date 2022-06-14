@@ -1,6 +1,6 @@
 // Emergency - MainActivity3
 
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -16,7 +16,8 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import com.example.healthapp.R
+// import com.example.healthapp.R
+import com.example.sentimentanalysis.R
 
 class MainActivity3 : AppCompatActivity() {
 

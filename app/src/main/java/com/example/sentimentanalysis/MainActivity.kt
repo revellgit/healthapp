@@ -1,4 +1,4 @@
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,10 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val DELAY = 1000L
+        val DELAY = 2000L
 
         window.decorView.apply {
-
             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
         }
 

@@ -1,4 +1,4 @@
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import org.junit.Test
 

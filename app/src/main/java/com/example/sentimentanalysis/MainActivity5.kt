@@ -1,6 +1,6 @@
 // Sentiment Analysis - MainActivity5
 
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,8 +13,12 @@ import com.chaquo.python.Python
 
 class MainActivity5 : AppCompatActivity() {
 
+    /*
+
     private lateinit var textView1: TextView
     private lateinit var textView2: TextView
+
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,27 +42,42 @@ class MainActivity5 : AppCompatActivity() {
         }
 
         btn2.setOnClickListener {
-            // val editText = findViewById<EditText>(R.id.inputText)
             val words: String = editText.text.toString()
 
-            val tv_poldes = findViewById<TextView>(R.id.textView_poldes)
-            val tv_subdes = findViewById<TextView>(R.id.textView_subdes)
+            // check for empty string
+            if (words != "") {
 
-            textView1 = findViewById(R.id.textView_polarity)
-            textView2 = findViewById(R.id.textView_subjectivity)
+                /*
+                val tv_poldes = findViewById<TextView>(R.id.textView_poldes)
+                val tv_subdes = findViewById<TextView>(R.id.textView_subdes)
 
-            val py = Python.getInstance()
-            val pyFile = py.getModule("pycode")
-            val polarity = pyFile.callAttr("getPolarity", words).toDouble()
-            val subject = pyFile.callAttr("getSubject", words).toDouble()
+                textView1 = findViewById(R.id.textView_polarity)
+                textView2 = findViewById(R.id.textView_subjectivity)
 
-            tv_poldes.text = convertPolarity(polarity)
-            tv_subdes.text = convertSubject(subject)
+                 */
 
-            textView1.text = ""
-            textView2.text = ""
-            textView1.text = "Polarity : "+String.format("%.2f", polarity)
-            textView2.text = "Subjectivity : "+String.format("%.2f", subject)
+                val py = Python.getInstance()
+                val pyFile = py.getModule("pycode")
+                val polarity = pyFile.callAttr("getPolarity", words).toDouble()
+                val subject = pyFile.callAttr("getSubject", words).toDouble()
+
+                val intent = Intent(this, MainActivity9::class.java)
+                intent.putExtra("polarity", polarity)
+                intent.putExtra("subject", subject)
+                startActivity(intent)
+
+                /*
+
+                tv_poldes.text = convertPolarity(polarity)
+                tv_subdes.text = convertSubject(subject)
+
+                textView1.text = ""
+                textView2.text = ""
+                textView1.text = "Polarity : " + String.format("%.2f", polarity)
+                textView2.text = "Subjectivity : " + String.format("%.2f", subject)
+
+                 */
+            }
         }
     }
 
@@ -86,6 +105,7 @@ class MainActivity5 : AppCompatActivity() {
         return "Neither"
     }
 
+    /* Unused code
     private fun getPython(words: String): String {
         val py = Python.getInstance()
         val pyFile = py.getModule("hello") // file pycode.py
@@ -93,4 +113,6 @@ class MainActivity5 : AppCompatActivity() {
         val g: String = pyFile.callAttr("test", "words").toString()
         return g
     }
+
+     */
 }

@@ -1,11 +1,10 @@
 // Menu - MainActivity2
 
-package com.example.healthapp
+package com.example.sentimentanalysis
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
 import androidx.cardview.widget.CardView
 
 class MainActivity2 : AppCompatActivity() {
