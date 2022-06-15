@@ -29,9 +29,9 @@ class MainActivity6 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        var size = 40F
+        var size = 40f
         var inhale = true
-        var breathCount = 1
+        var breathCount = 3
         val breaths = findViewById<TextView>(R.id.breath_count)
         val text = findViewById<TextView>(R.id.textView)
 
@@ -40,7 +40,7 @@ class MainActivity6 : AppCompatActivity() {
         text.textSize = size
         text.text = "inhale"
 
-        mediaplayer.setVolume(100.0f, 100.0f)
+        mediaplayer.setVolume(50.0f, 50.0f)
         mediaplayer.start()
         var running: Boolean = true
 
@@ -67,17 +67,19 @@ class MainActivity6 : AppCompatActivity() {
                     inhale = false
                 }
                 if (size < 20) {
-                    breathCount +=1
+                    breathCount -=1
                     inhale = true
-
                 }
             }
 
         thread() {
             try {
-                Thread.sleep(60 * 1000)
+                Thread.sleep(30 * 1000)
             } finally {
                 timer.cancel();
+                text.textSize = 40f
+                text.text = "listen to the waves"
+                breaths.text = ""
             }
         }
     }
