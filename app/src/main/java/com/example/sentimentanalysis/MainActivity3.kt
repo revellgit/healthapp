@@ -44,8 +44,9 @@ class MainActivity3 : AppCompatActivity() {
         val mediaplayer = MediaPlayer.create(this, R.raw.drip)
         val btn = findViewById<ImageButton>(R.id.custom_button)
         val phoneNum = findViewById<EditText>(R.id.phonenum_text)
+        val message = findViewById<EditText>(R.id.sms_text)
         phoneNum.setText("220449960")
-        // val phNum = phoneNum.text.toString()
+        message.setText("Default message text")
 
         btn.setOnTouchListener { view, motionEvent ->
             when (motionEvent.action) {
@@ -57,10 +58,11 @@ class MainActivity3 : AppCompatActivity() {
                         mediaplayer.start()
                         val sms: SmsManager = android.telephony.SmsManager.getDefault()
                         val phNum = phoneNum.text.toString()
+                        val message_text = message.text.toString()
                         sms.sendTextMessage(
                             phNum,
                             null,
-                            "This is my app sending a text when I press the red button",
+                            message_text,
                             null,
                             null
                         )
