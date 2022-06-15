@@ -12,6 +12,7 @@
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Analysis"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,62 +20,117 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_centerHorizontal="true"
         app:layout_constraintVertical_bias="0.100"
         />
 
-    <TextView
-        android:id="@+id/textView_polarity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="polarity :"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
 
-    <TextView
-        android:id="@+id/textView_subjectivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="subjectivity :"
-        android:textSize="20sp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.394"
+        >
 
-    <TextView
-        android:id="@+id/textView_poldes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="pos/neg"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
 
-    <TextView
-        android:id="@+id/textView_subdes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="personal/fact"
-        android:textSize="25sp"
+            <TextView
+                android:id="@+id/textView_poldes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pos/neg"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.332"
+                />
+
+            <TextView
+                android:id="@+id/textView_polarity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="polarity :"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.519"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintVertical_bias="0.668"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView_subdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="personal/fact"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.667"
+                />
+
+            <TextView
+                android:id="@+id/textView_subjectivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="subjectivity :"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.723"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <ImageButton
         android:id="@+id/homeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
         android:minWidth="64dp"
         android:minHeight="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,8 +139,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        android:background="@drawable/rounded_corners"
-        app:srcCompat="@drawable/ic_baseline_home_24" />
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
