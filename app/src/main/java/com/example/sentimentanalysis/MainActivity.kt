@@ -1,6 +1,7 @@
 package com.example.sentimentanalysis
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -14,11 +15,14 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val DELAY = 2000L
+        val DELAY = 3000L
 
         window.decorView.apply {
             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
         }
+
+        val mediaplayer = MediaPlayer.create(this, R.raw.chimes)
+        mediaplayer.start()
 
         Handler(Looper.myLooper()!!).postDelayed({
             val intent = Intent(this, MainActivity2::class.java)
