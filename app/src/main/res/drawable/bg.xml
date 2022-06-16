@@ -31,6 +31,4 @@
         android:top="-30dp"
         android:left="-30dp"
         android:drawable="@drawable/ic_leaf2"/>
-
-
 </layer-list>

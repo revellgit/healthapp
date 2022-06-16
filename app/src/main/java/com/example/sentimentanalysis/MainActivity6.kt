@@ -13,13 +13,16 @@ import kotlin.concurrent.fixedRateTimer
 import kotlin.concurrent.thread
 
 class MainActivity6 : AppCompatActivity() {
+
+    private lateinit var mediaplayer: MediaPlayer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main6)
 
         supportActionBar?.hide()
 
-        val mediaplayer = MediaPlayer.create(this, R.raw.ambient)
+        mediaplayer = MediaPlayer.create(this, R.raw.ambient)
 
         val homebtn = findViewById<ImageButton>(R.id.homeButton)
 
@@ -82,5 +85,10 @@ class MainActivity6 : AppCompatActivity() {
                 breaths.text = ""
             }
         }
+    }
+
+    override fun onBackPressed() {
+        mediaplayer.stop()
+        super.onBackPressed()
     }
 }
