@@ -36,9 +36,10 @@
 
     <EditText
         android:id="@+id/phonenum_text"
-        android:layout_width="125dp"
+        android:layout_width="wrap_content"
         android:layout_height="44dp"
         android:drawableStart="@drawable/ic_baseline_contact_phone_24"
+        android:drawablePadding="12dp"
         android:hint="Phone number"
         android:inputType="text"
         android:textSize="14sp"
@@ -46,25 +47,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743"
+        app:layout_constraintVertical_bias="0.705"
         />
+
 
     <EditText
         android:id="@+id/sms_text"
-        android:layout_width="250dp"
+        android:layout_width="290dp"
         android:layout_height="44dp"
+        android:drawableStart="@drawable/ic_baseline_textsms_24"
+        android:drawablePadding="12dp"
         android:hint="Message to send ..."
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823"
+        app:layout_constraintVertical_bias="0.77"
         />
-
-
 
     <ImageButton
         android:id="@+id/homeButton"

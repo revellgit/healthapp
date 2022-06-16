@@ -45,6 +45,7 @@ class MainActivity3 : AppCompatActivity() {
         val btn = findViewById<ImageButton>(R.id.custom_button)
         val phoneNum = findViewById<EditText>(R.id.phonenum_text)
         val message = findViewById<EditText>(R.id.sms_text)
+
         phoneNum.setText("220449960")
         message.setText("Default message text")
 
