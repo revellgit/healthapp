@@ -17,18 +17,4 @@
             android:gravity="fill_horizontal|fill_vertical"
             android:alpha="0.60"/>
     </item>
-
-    <item
-        android:width="100dp"
-        android:height="100dp"
-        android:top="-20dp"
-        android:left="-30dp"
-        android:drawable="@drawable/ic_leaf3"/>
-
-    <item
-        android:width="100dp"
-        android:height="100dp"
-        android:top="-30dp"
-        android:left="-30dp"
-        android:drawable="@drawable/ic_leaf2"/>
 </layer-list>

@@ -37,6 +37,9 @@ class MainActivity6 : AppCompatActivity() {
         var breathCount = 3
         val breaths = findViewById<TextView>(R.id.breath_count)
         val text = findViewById<TextView>(R.id.textView)
+        val title = findViewById<TextView>(R.id.title_text)
+
+        title.text = "Breathing"
 
         breaths.text = breathCount.toString()
 
@@ -80,6 +83,7 @@ class MainActivity6 : AppCompatActivity() {
                 Thread.sleep(30 * 1000)
             } finally {
                 timer.cancel();
+                title.text = ""
                 text.textSize = 40f
                 text.text = "listen to the waves"
                 breaths.text = ""
