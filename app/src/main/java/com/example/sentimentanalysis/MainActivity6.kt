@@ -50,7 +50,6 @@ class MainActivity6 : AppCompatActivity() {
         mediaplayer.start()
         var running: Boolean = true
 
-
             var timer: Timer = fixedRateTimer(initialDelay = 1000L, period = 50L) {
 
                 runOnUiThread(Runnable {
@@ -80,7 +79,8 @@ class MainActivity6 : AppCompatActivity() {
 
         thread() {
             try {
-                Thread.sleep(30 * 1000)
+                while (breathCount > 0) { }
+                // Thread.sleep(30 * 1000)
             } finally {
                 timer.cancel();
                 title.text = ""
