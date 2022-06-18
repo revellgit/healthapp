@@ -33,13 +33,8 @@ class MainActivity5 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btn = findViewById<Button>(R.id.clear_text)
         val btn2 = findViewById<Button>(R.id.button_analyse)
         val editText = findViewById<EditText>(R.id.inputText)
-
-        btn.setOnClickListener {
-            editText.text.clear()
-        }
 
         btn2.setOnClickListener {
             val words: String = editText.text.toString()
