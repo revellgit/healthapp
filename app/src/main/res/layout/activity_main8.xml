@@ -38,7 +38,7 @@
         app:srcCompat="@drawable/ic_baseline_home_24" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
+        android:id="@+id/kittygif"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:src="@drawable/sleeping_cat"
