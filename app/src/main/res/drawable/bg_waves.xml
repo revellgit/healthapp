@@ -13,7 +13,7 @@
     </item>
     <item>
         <bitmap
-            android:src="@drawable/ocean"
+            android:src="@drawable/oceanwaves"
             android:gravity="fill_horizontal|fill_vertical"
             android:alpha="0.20"/>
     </item>
