@@ -55,10 +55,12 @@ class MainActivity5 : AppCompatActivity() {
                 val pyFile = py.getModule("pycode")
                 val polarity = pyFile.callAttr("getPolarity", words).toDouble()
                 val subject = pyFile.callAttr("getSubject", words).toDouble()
+                val wordCount = pyFile.callAttr("countWords", words).toInt()
 
                 val intent = Intent(this, MainActivity9::class.java)
                 intent.putExtra("polarity", polarity)
                 intent.putExtra("subject", subject)
+                intent.putExtra("wordCount", wordCount)
                 startActivity(intent)
 
                 /*

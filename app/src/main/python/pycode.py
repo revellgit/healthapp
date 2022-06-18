@@ -8,7 +8,13 @@ def getPolarity(string):
     pol = TextBlob(string).sentiment.polarity
     return pol
 
-def test(string):
-    return string
+def countWords(string):
+    from textblob import TextBlob
+    # import nltk
+    intowords = TextBlob(string).words
+    total = len(intowords)
+    print ("Here is the total length",total)
+    return total
+
 
 

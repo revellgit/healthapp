@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394"
+        app:layout_constraintVertical_bias="0.300"
         >
 
         <LinearLayout
@@ -86,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668"
+        app:layout_constraintVertical_bias="0.525"
         >
 
         <LinearLayout
@@ -122,7 +122,56 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.723"
                 />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.750"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/countDes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Word Count"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.667"
+                />
+
+            <TextView
+                android:id="@+id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.723"
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -141,6 +190,8 @@
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/ic_baseline_home_24"
         />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,7 @@ class MainActivity6 : AppCompatActivity() {
         text.textSize = size
         text.text = "inhale"
 
-        mediaplayer.setVolume(50.0f, 50.0f)
+        mediaplayer.setVolume(0.3f, 0.3f)
         mediaplayer.start()
         var running: Boolean = true
 
@@ -82,12 +82,15 @@ class MainActivity6 : AppCompatActivity() {
                 while (breathCount > 0) { }
                 // Thread.sleep(30 * 1000)
             } finally {
-                timer.cancel();
-                title.text = ""
-                text.textSize = 40f
-                text.text = "listen to the waves"
-                breaths.text = ""
+                runOnUiThread(Runnable {
+                    timer.cancel();
+                    title.text = ""
+                    text.textSize = 40f
+                    text.text = "listen to the waves"
+                    breaths.text = ""
+                })
             }
+
         }
     }
 

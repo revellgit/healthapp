@@ -1,3 +1,5 @@
+// Show Analysis - MainActivity9
+
 package com.example.sentimentanalysis
 
 import android.content.Intent
@@ -22,12 +24,14 @@ class MainActivity9 : AppCompatActivity() {
 
         val polarity = getIntent().getDoubleExtra("polarity", 0.0)
         val subject = getIntent().getDoubleExtra("subject", 0.0)
+        val count = getIntent().getIntExtra("wordCount", 0)
 
         val tv_poldes = findViewById<TextView>(R.id.textView_poldes)
         val tv_subdes = findViewById<TextView>(R.id.textView_subdes)
 
         val textView1 = findViewById<TextView>(R.id.textView_polarity)
         val textView2 = findViewById<TextView>(R.id.textView_subjectivity)
+        val textView3 = findViewById<TextView>(R.id.count_tv)
 
         tv_poldes.text = convertPolarity(polarity)
         tv_subdes.text = convertSubject(subject)
@@ -36,6 +40,7 @@ class MainActivity9 : AppCompatActivity() {
         textView2.text = ""
         textView1.text = "Polarity : " + String.format("%.2f", polarity)
         textView2.text = "Subjectivity : " + String.format("%.2f", subject)
+        textView3.text = count.toString()
     }
 
     private fun convertPolarity(pol: Double): String {
