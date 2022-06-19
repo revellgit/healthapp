@@ -12,6 +12,8 @@ def countWords(string):
     from textblob import TextBlob
     import nltk
     nltk.download('punkt')
+    # nltk.download('brown')
+
     intowords = TextBlob(string).words
     total = len(intowords)
     print ("Here is the total length",total)
