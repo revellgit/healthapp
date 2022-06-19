@@ -21,6 +21,7 @@ android {
         python {
             pip {
                 install "textblob"
+                install "nltk"
             }
         }
 

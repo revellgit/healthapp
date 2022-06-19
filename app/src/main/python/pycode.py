@@ -10,7 +10,8 @@ def getPolarity(string):
 
 def countWords(string):
     from textblob import TextBlob
-    # import nltk
+    import nltk
+    nltk.download('punkt')
     intowords = TextBlob(string).words
     total = len(intowords)
     print ("Here is the total length",total)
