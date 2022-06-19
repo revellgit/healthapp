@@ -3,6 +3,7 @@
 package com.example.sentimentanalysis
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,6 +20,7 @@ class MainActivity6 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main6)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
         supportActionBar?.hide()
 
@@ -48,7 +50,6 @@ class MainActivity6 : AppCompatActivity() {
 
         mediaplayer.setVolume(0.3f, 0.3f)
         mediaplayer.start()
-        var running: Boolean = true
 
             var timer: Timer = fixedRateTimer(initialDelay = 1000L, period = 50L) {
 
